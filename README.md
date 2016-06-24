@@ -9,8 +9,7 @@ It supports nested types as long as it is a class, a List or a Dictionary.
 ## How to use
 
 #### Importing/Exporting to a Dictionary
-```cd
-
+```cs
 public class MySetting {
   public string Name { get; set; } = "Hello" 
   public bool Enable { get; set; } = false;
@@ -20,13 +19,23 @@ public class MySetting {
 }
 
 string settingsPath = "C:\config.xml"
-Dictionary<string, MySetting> mySettingsDictionary = new Dictionary<string, MySetting>();
+Dictionary<string, MySetting> mySettingsDictionary;
 
 //Loading
 ConfigurationFileManager<MySetting>.Load(settingsPath, MySetting.KeyValue, out mySettingsDictionary);
 
+setting.Enable = true;
+
 //Saving
 ConfigurationFileManager<MySetting>.Save(settingsPath, mySettingsDictionary.Values);
+
+//---
+
+MySetting setting;
+//Loading
+ConfigurationFileManager<MySetting>.Load(settingsPath, out setting);
+setting.Name = "New Name"
+ConfigurationFileManager<MySetting>.Save(settingsPath, setting);
 ```
 
 #### Most complex example (with known supported types, non-exaustive list!)

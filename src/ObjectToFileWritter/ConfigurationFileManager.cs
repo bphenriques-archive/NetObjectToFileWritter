@@ -30,7 +30,6 @@ namespace NetObjectToFileWritter {
         }
     }
 
-
     //starting to think that a visitor would make more sense (if we would prefer json in the future it would be easish to extend with visitor)
     /// <summary>
     /// Manages writting files to a file 

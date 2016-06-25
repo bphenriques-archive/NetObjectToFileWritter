@@ -4,7 +4,7 @@ Exports/Imports custom C# objects to Xml Files.
 
 The main object that will contain the values can be a object, a IEnumerable or a dictionary.
 
-It supports nested types as long as it is a class, a List or a Dictionary.
+It supports nested types as long as it is a class, a List or a Dictionary. It will import/export public properties.
 
 ## How to use
 

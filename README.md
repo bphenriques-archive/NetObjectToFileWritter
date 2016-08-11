@@ -6,6 +6,8 @@ The main object that will contain the values can be a object, a IEnumerable or a
 
 It supports nested types as long as it is a class, a List or a Dictionary. It will import/export public properties.
 
+Edit: Well, hmm, I found that I could use XmlSerializer instead. Hmm, learning experience ! Plus, this support dictionaries!
+
 ## How to use
 
 #### Importing/Exporting to a Dictionary

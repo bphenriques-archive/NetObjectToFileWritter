@@ -1,4 +1,6 @@
-# Well, hmm, I found that I could use XmlSerializer instead. Hmm, was fun to learn this! But hey, it does one thing that the latter does not: support dictionaries!
+#### Well, hmm, I found that I could use XmlSerializer instead. Hmm, was fun to learn this! But hey, it does one thing that the latter does not: support dictionaries!
+
+___
 
 # NetObjectToXmlFileWritter
 
